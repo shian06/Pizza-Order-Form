@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale = 1.0">
+    <title>process</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+        <p>Select your preferred Pizza Size🍕</p>
+         <label>
+           <input type="radio" name="pizzaSize" value="small" checked> Small
+        </label>
+       <label>
+         <input type="radio" name="pizzaSize" value="medium" checked> Medium
+       </label>
+       <label>
+         <input type="radio" name="pizzaSize" value="large"> Large
+       </label> <br>
+       
+       <label for="crustType">Crust Type</label>
+       <select name="crust" id="crustType" required>
+         <option value="" disabled selected hidden>-- Choose a crust --</option>
+         <option value="thin">Thin</option>
+         <option value="thick">Thick</option>
+         <option value="stuffed">Stuffed</option>
+         <option value="gluten-free">Gluten-free</option>
+       </select>
+       
+       <label for="sauce">Sauce</label>
+       <select name="sauce" id="sauce" required>
+         <optgroup label="classic">
+           <option value="tomato">Tomato</option>
+           <option value="garlic">Garlic</option>
+           <option value="white">White</option>
+         </optgroup>
+         <optgroup label="special">
+           <option value="pesto">Pesto</option>
+           <option value="barbecue">Barbecue</option>
+         </optgroup>
+       </select> <br>
+       
+        <br><p>Toppings</p>
+        <label>
+          <input type="checkbox" name="toppings" value="cheese" checked disabled> Cheese
+        </label>
+        <label>
+          <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni
+        </label>
+        <label>
+          <input type="checkbox" name="toppings" value="mushrooms"> Mushrooms
+        </label>
+        <label>
+          <input type="checkbox" name="toppings" value="onions"> Onions
+        </label>
+        <label>
+          <input type="checkbox" name="toppings" value="bell peppers"> Bell Peppers
+        </label>
+        <label>
+          <input type="checkbox" name="toppings" value="olives"> Olives
+        </label>
+        <label>
+          <input type="checkbox" name="toppings" value="bacon"> Bacon
+        </label>
+        <label>
+          <input type="checkbox" name="toppings" value="pineapple" title="Warning: Pineapple on pizza is controversial!"> Pineapple
+        </label>
+    
+        <p> Delivery Method:</p>
+        <input type="radio" id="method1" name="method" value="Home Delivery">
+        <label for="method1">Home Delivery</label><br> 
+
+        <input type="radio" id="method2" name="method" value="Home Delivery">
+        <label for="method2">Store Pickup</label><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" placeholder="Enter your complete address here..."></textarea>
+
+        <fieldset>
+        <legend>Payment Details</legend>
+
+        <label for="payment">Payment Method:</label>
+<select id="payment" name="payment">
+<option value="">Select Payment Method</option>
+<option value="credit">Credit Card</option>
+<option value="gcash">GCash</option>
+<option value="cod">Cash on Delivery</option>
+</select>
+
+<br><br>
+
+<label for="card">Card Number (Required for Credit Card only)</label>
+<input type="text" id="card" name="card"
+pattern="[0-9]{16}"
+maxlength="16"
+placeholder="1234567890123456">
+
+</fieldset>
+    
+    <h3>Size Price</h3>
+        <table>
+          <tr>
+            <th>Size</th>
+            <th>Base Price</th>
+            <th>Extra Toppings (each)</th>
+          </tr>
+          <tr>
+            <td>Small</td>
+            <td>₱199</td>
+            <td>+₱20</td>
+          </tr>
+          <tr>
+            <td>Medium</td>
+            <td>₱299</td>
+            <td>+₱25</td>
+          </tr>
+          <tr>
+            <td>Large</td>
+            <td>₱399</td>
+            <td>+₱30</td>
+          </tr>
+          <tr>
+            <td>Small</td>
+            <td>₱499</td>
+            <td>+₱35</td>
+          </tr>
+        </table>
+    
+    <br><input type="submit" value="Submit">
+    <input type="reset" value="Reset"><br>
+        
+    </form>
+  </body>
+  </html>
