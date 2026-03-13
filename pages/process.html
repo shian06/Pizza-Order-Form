@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizza Order</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="order-page">
+
+<nav class="navbar">
+<div class="logo">
+<img src="../images/logo.png" alt="Pizza Logo">
+</div>
+
+<div class="nav-links">
+<a href="index.html">Back</a>
+</div>
+</nav>
+
+<div class="order-form">
+
+<h1 class="order-title">CREATE YOUR <span>PERFECT SLICE!</span></h1>
+
+<form action="#" method="POST">
+
+<h3>Customer's Information</h3>
+
+<div class="form-row">
+
+<div class="form-group">
+<label for="fname">Name</label>
+<input type="text" id="fname" name="fname" minlength="5" maxlength="60" placeholder="Enter your name" required>
+</div>
+
+<div class="form-group">
+<label for="age">Age</label>
+<input type="number" id="age" name="age" min="13" max="99" placeholder="Enter age">
+</div>
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="Enter your email">
+</div>
+
+<div class="form-group">
+<label for="phoneNum">Phone Number</label>
+<input type="number" id="phoneNum" name="phoneNum" placeholder="Enter phone number">
+</div>
+
+</div>
+
+<h3>Pizza Size</h3>
+
+<div class="radio-group">
+<label><input type="radio" name="pizzaSize" value="small" checked> Small</label>
+<label><input type="radio" name="pizzaSize" value="medium"> Medium</label>
+<label><input type="radio" name="pizzaSize" value="large"> Large</label>
+<label><input type="radio" name="pizzaSize" value="extraLarge"> Extra Large</label>
+</div>
+
+<div class="form-group">
+
+<h3>Crust Type</h3>
+
+<select name="crust" id="crustType" required>
+<option value="" disabled selected>Choose crust</option>
+<option value="thin">Thin</option>
+<option value="thick">Thick</option>
+<option value="stuffed">Stuffed</option>
+<option value="gluten-free">Gluten Free</option>
+</select>
+
+</div>
+
+<div class="form-group">
+
+<h3>Sauce</h3>
+
+<select name="sauce" id="sauce" required>
+<optgroup label="Classic">
+<option value="tomato">Tomato</option>
+<option value="garlic">Garlic</option>
+<option value="white">White</option>
+</optgroup>
+
+<optgroup label="Special">
+<option value="pesto">Pesto</option>
+<option value="barbecue">Barbecue</option>
+</optgroup>
+
+</select>
+
+</div>
+
+<h3>Toppings</h3>
+
+<div class="toppings-grid">
+<label><input type="checkbox" name="toppings" value="cheese" checked disabled> Cheese</label>
+<label><input type="checkbox" name="toppings" value="pepperoni"> Pepperoni</label>
+<label><input type="checkbox" name="toppings" value="mushrooms"> Mushrooms</label>
+<label><input type="checkbox" name="toppings" value="onions"> Onions</label>
+<label><input type="checkbox" name="toppings" value="bell peppers"> Bell Peppers</label>
+<label><input type="checkbox" name="toppings" value="olives"> Olives</label>
+<label><input type="checkbox" name="toppings" value="bacon"> Bacon</label>
+<label><input type="checkbox" name="toppings" value="pineapple"> Pineapple</label>
+</div>
+
+<h3>Delivery Method</h3>
+
+<label><input type="radio" name="method" value="delivery"> Home Delivery</label>
+<label><input type="radio" name="method" value="pickup"> Store Pickup</label>
+
+<div class="form-group">
+<label for="address">Address</label>
+<textarea id="address" name="address" rows="3" placeholder="Enter your address"></textarea>
+</div>
+
+<fieldset>
+
+<legend>Payment Details</legend>
+
+<label for="payment">Payment Method</label>
+
+<select id="payment" name="payment">
+<option value="">Select Payment</option>
+<option value="credit">Credit Card</option>
+<option value="gcash">GCash</option>
+<option value="cod">Cash on Delivery</option>
+</select>
+
+<label for="card">Card Number</label>
+
+<input type="text" id="card" name="card" pattern="[0-9]{16}" maxlength="16" placeholder="1234567890123456">
+
+</fieldset>
+
+<h3>Size Price</h3>
+
+<table>
+
+<tr>
+<th>Size</th>
+<th>Base Price</th>
+<th>Extra Toppings</th>
+</tr>
+
+<tr>
+<td>Small</td>
+<td>₱199</td>
+<td>+₱20</td>
+</tr>
+
+<tr>
+<td>Medium</td>
+<td>₱299</td>
+<td>+₱25</td>
+</tr>
+
+<tr>
+<td>Large</td>
+<td>₱399</td>
+<td>+₱30</td>
+</tr>
+
+<tr>
+<td>Extra Large</td>
+<td>₱499</td>
+<td>+₱35</td>
+</tr>
+
+</table>
+
+<div class="form-buttons">
+<a href="../pages/thankyou.html">
+<button type="button">Submit Order</button>
+</a>
+<input type="reset" value="Reset">
+</div>
+
+</form>
+</div>
+
+</body>
+</html>
